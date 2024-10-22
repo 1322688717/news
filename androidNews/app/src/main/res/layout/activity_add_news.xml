@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 主标题输入框 -->
+    <EditText
+        android:id="@+id/et_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="主标题"
+        android:inputType="text" />
+
+    <!-- 副标题输入框 -->
+    <EditText
+        android:id="@+id/et_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="副标题"
+        android:inputType="text" />
+
+    <!-- 新闻类型选择 -->
+    <Spinner
+        android:id="@+id/spinner_news_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/news_types" />
+
+    <!-- logo选择按钮 -->
+    <Button
+        android:id="@+id/btn_choose_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择Logo" />
+
+    <!-- 详情输入框 -->
+    <EditText
+        android:id="@+id/et_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="详情"
+        android:inputType="textMultiLine"
+        android:minLines="5" />
+
+    <!-- 添加新闻按钮 -->
+    <Button
+        android:id="@+id/btn_add_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加新闻"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
